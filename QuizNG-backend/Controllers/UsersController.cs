@@ -19,7 +19,7 @@ namespace QuizNG_backend.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<AppUser>> CreateUser([FromBody]CreateUserDto createUserDto)
+        public async Task<ActionResult<AppUser>> Register([FromBody]CreateUserDto createUserDto)
         {
             if (!ModelState.IsValid)
             {
